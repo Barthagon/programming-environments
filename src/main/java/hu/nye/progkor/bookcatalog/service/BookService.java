@@ -6,15 +6,15 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * A service for managing songs in the book catalog.
+ * A service for managing books in the book catalog.
  */
 public interface BookService {
 
     /**
      * Creates a new book.
      *
-     * @param book the song to create
-     * @return the created song
+     * @param book the book to create
+     * @return the created book
      */
     Book createBook(Book book);
 
@@ -29,7 +29,7 @@ public interface BookService {
     /**
      * Retrieves all the books in the catalog.
      *
-     * @return the list of found songs
+     * @return the list of found books
      */
     List<Book> retrieveAllBooks();
 

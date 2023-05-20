@@ -18,7 +18,7 @@ import hu.nye.progkor.bookcatalog.data.model.Book;
 import hu.nye.progkor.bookcatalog.service.BookService;
 
 /**
- * A REST controller for managing songs in the music catalog.
+ * A REST controller for managing books in the book catalog.
  */
 @RestController
 @RequestMapping("/api/v1/book")

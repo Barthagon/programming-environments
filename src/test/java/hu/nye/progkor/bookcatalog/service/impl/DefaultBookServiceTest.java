@@ -78,7 +78,7 @@ public class DefaultBookServiceTest {
     }
 
     @Test
-    void updateBook() {
+    void updateBookShouldDelegateToTheRepositoryAndUpdateSelectedBook() {
         // Given
         given(bookRepository.update(DUMMY_BOOK)).willReturn(DUMMY_BOOK);
 
@@ -92,16 +92,14 @@ public class DefaultBookServiceTest {
     }
 
     @Test
-    void deleteBookById() {
+    void deleteBookByIdShouldDelegateToTheRepositoryAndDeleteSelectedBookById() {
         // Given
-        final List<Book> expectedBooks = List.of(DUMMY_BOOK);
 
         // When
         underTest.deleteBookById(DUMMY_BOOK_ID);
-        final List<Book> actual = underTest.retrieveAllBooks();
 
         // Then
-        assertThat(actual, not(DUMMY_BOOK));
+        verify(bookRepository).deleteById(DUMMY_BOOK_ID);
     }
 
 }
