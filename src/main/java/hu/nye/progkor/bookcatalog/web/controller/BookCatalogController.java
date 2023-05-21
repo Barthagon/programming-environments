@@ -16,8 +16,7 @@ import hu.nye.progkor.bookcatalog.data.model.Book;
 import hu.nye.progkor.bookcatalog.service.BookService;
 
 /**
-
- Controller for book catalog.
+ * Controller for book catalog.
  */
 @Controller
 @RequestMapping("/book-catalog")
@@ -35,10 +34,11 @@ public class BookCatalogController {
     }
 
     /**
-     Shows the book editor screen.
-     @param model the model object to store attributes
-     @param id the id of the book to retrieve
-     @return the name of the edit view to render
+     * Shows the book editor screen.
+     *
+     * @param model the model object to store attributes
+     * @param id    the id of the book to retrieve
+     * @return the name of the edit view to render
      */
     @GetMapping("/{id}")
     public String getBookById(Model model, @PathVariable Long id) {
@@ -53,9 +53,10 @@ public class BookCatalogController {
     }
 
     /**
-     Shows the book list screen.
-     @param model the model object to store attributes
-     @return the name of the book list view to render
+     * Shows the book list screen.
+     *
+     * @param model the model object to store attributes
+     * @return the name of the book list view to render
      */
     @GetMapping
     public String getAllBooks(Model model) {
@@ -65,8 +66,9 @@ public class BookCatalogController {
     }
 
     /**
-     Shows the book creation screen.
-     @return the name of the book creation view to render
+     * Shows the book creation screen.
+     *
+     * @return the name of the book creation view to render
      */
     @GetMapping("/create")
     public String createBook() {
@@ -74,11 +76,12 @@ public class BookCatalogController {
     }
 
     /**
-     Creates a new book.
-     Also navigates back to the editor screen.
-     @param model the model object to store attributes
-     @param book the book object to create
-     @return the name of the edit view to render
+     * Creates a new book.
+     * Also navigates back to the editor screen.
+     *
+     * @param model the model object to store attributes
+     * @param book  the book object to create
+     * @return the name of the edit view to render
      */
     @PostMapping("/create")
     public String createBook(Model model, Book book) {
@@ -88,11 +91,12 @@ public class BookCatalogController {
     }
 
     /**
-     Updates an existing book.
-     Also navigates back to the editor screen.
-     @param model the model object to store attributes
-     @param book the book object to update
-     @return the name of the edit view to render
+     * Updates an existing book.
+     * Also navigates back to the editor screen.
+     *
+     * @param model the model object to store attributes
+     * @param book  the book object to update
+     * @return the name of the edit view to render
      */
     @PostMapping(value = "/update", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
     public String updateBook(Model model, Book book) {
@@ -102,11 +106,12 @@ public class BookCatalogController {
     }
 
     /**
-     Deletes a book by ID.
-     Also navigates back to the book list screen.
-     @param model the model object to store attributes
-     @param id the id of the book to delete
-     @return the name of the book list view to render
+     * Deletes a book by ID.
+     * Also navigates back to the book list screen.
+     *
+     * @param model the model object to store attributes
+     * @param id    the id of the book to delete
+     * @return the name of the book list view to render
      */
     @GetMapping("/{id}/delete")
     public String deleteBookById(Model model, @PathVariable Long id) {

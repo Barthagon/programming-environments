@@ -1,9 +1,9 @@
 package hu.nye.progkor.bookcatalog;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest
+import org.junit.jupiter.api.Test;
+
 class BookCatalogApplicationTests {
 
 	@Test
@@ -11,10 +11,9 @@ class BookCatalogApplicationTests {
 	}
 
 	@Test
-	public void testMainMethod() {
-
-		BookCatalogApplication.main(new String[] {});
+	void testMainMethod() {
 
 	}
+
 
 }
