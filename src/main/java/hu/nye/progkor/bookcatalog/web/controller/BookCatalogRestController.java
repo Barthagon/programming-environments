@@ -27,8 +27,8 @@ public class BookCatalogRestController {
     private final BookService bookService;
 
     @Autowired
-    public BookCatalogRestController(BookService songService) {
-        this.bookService = songService;
+    public BookCatalogRestController(BookService bookService) {
+        this.bookService = bookService;
     }
 
     /**
@@ -50,7 +50,7 @@ public class BookCatalogRestController {
      * @return the list of books
      */
     @GetMapping
-    public List<Book> getAllSongs() {
+    public List<Book> getAllbooks() {
         return bookService.retrieveAllBooks();
     }
 

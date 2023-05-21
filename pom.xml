@@ -111,7 +111,7 @@
 					<excludes>
 						<exclude>hu\nye\progkor\bookcatalog\data\model\**</exclude>
 						<exclude>hu\nye\progkor\bookcatalog\web\controller\**</exclude>
-						<exclude>hu\nye\progkor\bookcatalog\MusicCatalogApplication.class</exclude>
+						<exclude>hu\nye\progkor\bookcatalog\BookCatalogApplication.class</exclude>
 						<exclude>hu\nye\progkor\bookcatalog\data\repository\**</exclude>
 						<exclude>hu\nye\progkor\bookcatalog\web\configuration\**</exclude>
 						<exclude>*Test</exclude>
