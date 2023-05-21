@@ -1,5 +1,8 @@
 package hu.nye.progkor.bookcatalog.data.model;
 
+/**
+ * Enum for book genre selection.
+ */
 public enum Genre {
     ACTION,
     ADVENTURE,
