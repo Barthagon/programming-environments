@@ -23,7 +23,7 @@ import hu.nye.progkor.bookcatalog.service.BookService;
 public class DefaultBookServiceTest {
 
     private static final Long DUMMY_BOOK_ID = 1L;
-    private static final Book DUMMY_BOOK = new Book(DUMMY_BOOK_ID,"title","author",Genre.Action,2003,300);
+    private static final Book DUMMY_BOOK = new Book(DUMMY_BOOK_ID,"title","author",Genre.ACTION,2003,300);
 
     @Mock
     private Repository<Book, Long> bookRepository;
